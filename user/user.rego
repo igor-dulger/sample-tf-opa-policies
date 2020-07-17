@@ -3,10 +3,7 @@ package terraform
 import input.tfplan as tfplan
 import input.tfrun as tfrun
 
-
-
 allowed_cli_users = ["d.johnson", "j.smith"]
-
 
 contains(arr, elem) {
   arr[_] = elem
