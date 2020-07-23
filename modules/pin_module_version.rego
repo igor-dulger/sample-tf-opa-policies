@@ -14,6 +14,8 @@ version_str(module) = v1 {
     v2 := "undefined"
 }
 
+
+
 deny[reason] {
     walk(tfplan.configuration.root_module.module_calls, [path, value])
     pinned_version = pins[module_source]
