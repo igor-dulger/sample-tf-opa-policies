@@ -9,12 +9,11 @@ resource_modules = {
     "aws_db_instance": "terraform-aws-modules/rds/aws"
 }
 
+
+
 contains(arr, elem) {
   arr[_] = elem
 }
-
-
-
 
 deny[reason] {
     resource := tfplan.resource_changes[_]
