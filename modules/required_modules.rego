@@ -9,8 +9,6 @@ resource_modules = {
     "aws_db_instance": "terraform-aws-modules/rds/aws"
 }
 
-
-
 contains(arr, elem) {
   arr[_] = elem
 }
