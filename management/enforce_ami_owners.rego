@@ -20,6 +20,8 @@ contains(arr, elem) {
   arr[_] = elem
 }
 
+
+
 eval_expression(plan, expr) = constant_value {
     constant_value := expr.constant_value
 } else = reference {
