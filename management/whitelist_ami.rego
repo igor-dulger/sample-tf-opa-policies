@@ -36,6 +36,7 @@ get_address(value) = address {
     source := value.source
 }
 
+
 # Force all found AMIs to belong to allowed list
 deny[reason] {
     resource := tfplan.resource_changes[_]
