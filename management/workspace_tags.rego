@@ -20,6 +20,7 @@ deny[reason] {
     cloud_tag := resource.provider_name
     not contains(ws_tags, cloud_tag)
 
+
     reason := sprintf("Workspace must be marked with %q tag to create resources in %s cloud",
                       [cloud_tag, cloud_tag])
 }
