@@ -19,6 +19,7 @@ get_tags(resource) = labels {
     empty := {}
 }
 
+
 deny[reason] {
     resource := tfplan.resource_changes[_]
     action := resource.change.actions[count(resource.change.actions) - 1]
