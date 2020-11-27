@@ -10,6 +10,8 @@ contains(arr, elem) {
   arr[_] = elem
 }
 
+
+
 get_tags(resource) = labels {
     "google" == resource.provider_name
     labels := resource.change.after.labels
