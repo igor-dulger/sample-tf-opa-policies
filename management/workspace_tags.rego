@@ -15,6 +15,7 @@ deny[reason] {
     action := resource.change.actions[count(resource.change.actions) - 1]
     contains(["create", "update"], action)
 
+
     ws_tags := [ key | tfrun.workspace.tags[key] ]
     cloud_tag := resource.provider_name
     not contains(ws_tags, cloud_tag)
