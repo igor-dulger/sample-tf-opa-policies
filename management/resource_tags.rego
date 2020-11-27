@@ -2,15 +2,11 @@ package terraform
 
 import input.tfplan as tfplan
 
-
 required_tags = ["owner", "department"]
-
 
 contains(arr, elem) {
   arr[_] = elem
 }
-
-
 
 get_tags(resource) = labels {
     "google" == resource.provider_name
@@ -20,8 +16,6 @@ get_tags(resource) = labels {
 } else = empty {
     empty := {}
 }
-
-
 
 deny[reason] {
     resource := tfplan.resource_changes[_]
