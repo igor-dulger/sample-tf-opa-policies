@@ -8,6 +8,7 @@ pins = {
     "terraform-aws-modules/another-module": "1.0",
 }
 
+
 version_str(module) = v1 {
     v1 := module.version_constraint
 } else = v2 {
