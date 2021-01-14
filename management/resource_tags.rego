@@ -2,9 +2,7 @@ package terraform
 
 import input.tfplan as tfplan
 
-
 required_tags = ["owner", "department"]
-
 
 contains(arr, elem) {
   arr[_] = elem

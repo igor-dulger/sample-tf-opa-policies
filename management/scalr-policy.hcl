@@ -1,11 +1,22 @@
 version = "v1"
 
+
+policy "enforce_ami_owners" {
+  enabled           = true
+  enforcement_level = "hard-mandatory"
+}
+
 policy "instance_types" {
   enabled           = true
   enforcement_level = "hard-mandatory"
 }
 
 policy "resource_tags" {
+  enabled           = true
+  enforcement_level = "hard-mandatory"
+}
+
+policy "whitelist_ami" {
   enabled           = true
   enforcement_level = "hard-mandatory"
 }
