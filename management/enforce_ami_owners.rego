@@ -16,6 +16,7 @@ allowed_owners = [
 ]
 
 
+
 contains(arr, elem) {
   arr[_] = elem
 }
@@ -30,6 +31,7 @@ eval_expression(plan, expr) = constant_value {
     var_name := replace(ref, "var.", "")
     reference := plan.variables[var_name].value
 }
+
 
 deny[reason] {
     walk(tfplan.configuration.root_module, [path, value])
